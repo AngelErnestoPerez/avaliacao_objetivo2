@@ -49,7 +49,6 @@ public class ContaController {
         associados.add(cc2);
         associados.add(cc3);
 
-        //contas.sort(Comparator.comparingDouble(Conta::));
         //c:
         cp1.deposita(1800.00);
         cp1.saca(300.00);
@@ -83,9 +82,9 @@ public class ContaController {
         cc3.atualiza(0.05);
         System.out.println(cc3);
 
-
-        //f:
-
+        /*e: Faça com que cada as sociado vip tenha as seguintes quantidade de cotas,
+        nessa ordem: 100, 400, 600, 300, 600, 600, e imprimas. Feito nas linhas 23 a 31.
+        f:*/
         associados.sort(Comparator.comparing(AssociadoVip::getQdeCotas).reversed());
         System.out.println(associados);
 
@@ -98,9 +97,5 @@ public class ContaController {
          }
         }
 
-        System.out.println("");
-
-
     }
 }
-

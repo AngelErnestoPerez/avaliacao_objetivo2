@@ -52,8 +52,6 @@ public class ContaCorrente extends Conta implements AssociadoVip{
                 "} ";
     }
 
-
-
     @Override
     public String getValorCota() {
         return null;
